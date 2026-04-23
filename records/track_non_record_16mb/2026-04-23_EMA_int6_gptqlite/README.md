@@ -2,8 +2,6 @@
 
 This submission is a standalone variant of `openai/parameter-golf`'s `train_gpt.py` baseline for the 16 MB / 10 minute challenge. It keeps the baseline training/evaluation structure and byte-accurate SentencePiece BPB calculation, then layers a small set of targeted changes that improved the attached run.
 
-Because this package currently includes a single attached training log, this is best framed as a **non-record submission** or a draft submission package. The Parameter Golf repo requires enough independent logs to show statistical significance for a record claim.
-
 ## Summary
 
 Relative to the public naive baseline, this script pushes the model toward better final quality without exceeding the artifact cap. The main changes are:
@@ -101,16 +99,9 @@ VAL_LOSS_EVERY=0 \
 
 ## Included files
 
-Recommended submission folder contents:
+Submission folder contents:
 
 - `train_gpt.py`
 - `README.md`
 - `submission.json`
 - `train.log`
-
-If you later collect two additional independent full runs, you can extend this package into a record-style submission with significance reporting.
-
-## Notes
-
-- Replace the placeholder identity fields in `submission.json` before opening a PR.
-- With only one attached log, this should be filed under `track_non_record_16mb` unless you add the extra runs required for a record claim.
